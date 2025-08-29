@@ -4,8 +4,17 @@
 <title>Page Title</title>
 <style>
     body {
-      background-color: black;
-      color: white;
+       margin: 0;
+    height: 100vh;
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80);
+    background-size: 600% 600%;
+    animation: gradientShift 10s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
     }
   </style>
 </head>
@@ -15,8 +24,10 @@
 <p>Mankind was born on Earth. It was never meant to die here.</p>
 <p>You're the ghost of your children's future.</p>
 <p><img src="https://rukminim2.flixcart.com/image/704/844/jlqwpe80-1/poster/m/m/a/small-interstellar-dont-let-me-leave-murph-small-poster-paper-original-imaf8thxzxdgtccd.jpeg?q=90&crop=false" alt="Description of image" width="300" height="500"></p>
-<p><img scr="https://www.desmos.com/calculator/qb01vdzyjf" alt="Description of image" width="300" height="500"></p>
-    <ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UDVtMYqUAyw?si=UfXKXFPOWcHh7HeO&amp;start=70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.desmos.com/calculator/qrpxtvifn1?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<ol>
   <li>Cooper</li>
   <li>Murph</li>
   <li>Brand</li>
@@ -35,8 +46,28 @@
     </ol>
   </li>
 </ul>
+<style>
+  .bounce {
+    font-size: 50px;
+    display: inline-block;
+    animation: bounce 1s infinite;
+  }
 
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+</style>
+
+<p class="bounce">🌌</p>
+<p class="bounce">🌠</p>
+<p class="bounce">🚀</p>
+
+<h1 style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;">
+  Have a good day!
+</h1>
 
 </body>
 </html>
-
